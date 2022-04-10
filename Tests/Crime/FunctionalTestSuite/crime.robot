@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${web_url}  http://127.0.0.1:5000
-${email}    dhoni@gmail.com
+${email}    rahul@gmail.com
 ${password}  25122000
 
 *** Test Cases ***
@@ -14,7 +14,7 @@ Guest Crime Report test
      maximize browser window
      click Element  xpath:/html/body/div/div/div/div/form/table/tbody/tr[6]/td[2]/a
      sleep  3s
-     input text  name:descrip  chain robbery had been occured in mumbai
+     input text  name:descrip  chain robbery had been occur in kerala
      sleep  3s
      input text  name:remark  robbery
      sleep   1s
@@ -30,7 +30,7 @@ Admin Login test
     maximize browser window
     input text  name:admname  admin
     sleep  1s
-    input text  name:admpass  25122
+    input text  name:admpass  12346
     sleep  1s
     click button  name:btn1
     sleep  1s
@@ -46,7 +46,7 @@ Filter With Date test
     [Tags]  admin
     click link  xpath:/html/body/div[1]/div/div/nav/div/div/ul/li[2]/a
     sleep  3s
-    input text  xpath:/html/body/div[2]/div/form/table/tbody/tr[1]/td[2]/input  04/09/2022
+    input text  xpath:/html/body/div[2]/div/form/table/tbody/tr[1]/td[2]/input  10/07/2022
     sleep  3s
     click button  xpath:/html/body/div[2]/div/form/table/tbody/tr[2]/td[2]/button
     sleep 3s
@@ -65,13 +65,13 @@ User Registeration test
     maximize browser window
     click Element  xpath:/html/body/div/div/div/div/form/table/tbody/tr[4]/td[2]/a
     sleep  1s
-    input text  name:username  dhoni
+    input text  name:username  rahul
     sleep  1s
-    input text  name:address  mumbai
+    input text  name:address   kerala
     sleep  1s
     input text  name:useremail  ${email}
     sleep  1s
-    input text  name:userphone  9352628990
+    input text  name:userphone  8492182733
     sleep  1s
     input text  name:userpass  ${password}
     sleep  1s
@@ -121,11 +121,11 @@ Edit User Profile test
     sleep  5s
     click Element  xpath:/html/body/div/div/div/nav/div/div/ul/li[2]/a
     sleep  2s
-    input text  name:newname   sachein
+    input text  name:newname   Aravind
     sleep  3s
     click button  xpath:/html/body/div[2]/div/div/form[1]/table/tbody/tr[2]/td[2]/button
     sleep  1s
-    input text  name:newphone  6373839351
+    input text  name:newphone  6748291546
     sleep  1s
     click button  xpath:/html/body/div[2]/div/div/form[2]/table/tbody/tr[6]/td[2]/button
     sleep  3s
@@ -138,3 +138,4 @@ User Logout test
     close browser
 
 *** Keywords ***
+
